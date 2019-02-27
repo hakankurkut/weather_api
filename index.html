@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Attach own stylesheet -->
+    <link rel="stylesheet" href="./static/css/main.css">
+  </head>
+  <body>
+    <!-- Put nav in header using jQuery -->
+    <header></header>
+    <!-- Container for form and display cards -->
+    <div class="container">
+      <div class="row extra-margin-lg">
+        <div class="col-md-4 offset-md-4">
+          <form idea="search_weather" class="form-inline" action="" method="post">
+            <input id="city_search" class="form-control" type="text" name="city" placeholder="City...">
+            <input id="submit-btn" class="btn btn-primary" type="submit" name="submit" value="Submit">
+          </form>
+        </div> <!-- end col-4 -->
+      </div> <!-- end row for form -->
+    </div> <!-- end container for form -->
+    <div class="container extra-margin-lg" id="weather-info">
+      <h2 id="city_name">Weather Info</h2>
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <div class="card">
+            <div class="card-title bade-danger">High</div>
+            <div id="high" class="card-text">45&deg;</div>
+          </div> <!-- end card for High -->
+        </div> <!-- end col  -->
+      </div> <!-- end row for card 1-->
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <div class="card">
+            <div class="card-title badge-success">Low</div>
+            <div id="low" class="card-text">22&deg;</div>
+          </div> <!-- end card for Low -->
+        </div> <!-- end col  -->
+      </div> <!-- end row for card 2-->
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <div class="card">
+            <div class="card-title badge-warning">Forecast</div>
+            <div id="forecast" class="card-text">Cloudy</div>
+          </div> <!-- end card for Forecast -->
+        </div> <!-- end col  -->
+      </div> <!-- end row for card 3-->
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <div class="card">
+            <div class="card-title">Humidity</div>
+            <div class="card-text">45%</div>
+          </div> <!-- end card for Humidity -->
+        </div> <!-- end col  -->
+      </div> <!-- end row for card 4-->
+    </div> <!-- end container for weather info -->
+    <!-- Attach minified version of jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+    </script>
+    <!-- Attach Bootstrap 4 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Attach own JS -->
+    <script type="module" src="./static/js/app.js"></script>
+  </body>
+</html>
